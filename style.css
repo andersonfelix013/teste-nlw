@@ -25,19 +25,23 @@ main{
 }
 
 h1{
-    font-size: 24px;
-    color: white;
+    font-size: 1.5rem;
+    color: var(--grey);
+    margin-top: 0.25rem;
 }
 
 p{
-    color: white;
+    margin-top: 2rem;
+    color: var(--grey);
     font-weight: 400;
 }
 
 a{
-    color: white;
+    color:var(--grey);
     text-decoration: none;
-    font-weight: 700;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    align-items: center;
 }
 
 .anderson{
@@ -46,6 +50,7 @@ a{
 }
 
 ul{
+    margin-top: 4rem;
     list-style: none;
 }
 
@@ -66,4 +71,12 @@ ul{
 .avatar span{
     position: absolute;
     top: -15px;
+    z-index: 1;
+}
+
+.avatar > img{
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
